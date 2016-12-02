@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -34,9 +34,10 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(41, 27)
+        Me.Label1.Location = New System.Drawing.Point(55, 34)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(105, 20)
+        Me.Label1.Size = New System.Drawing.Size(146, 25)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Maplestory is:"
         '
@@ -44,18 +45,20 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
-        Me.Label2.Location = New System.Drawing.Point(52, 83)
+        Me.Label2.Location = New System.Drawing.Point(69, 104)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(209, 46)
+        Me.Label2.Size = New System.Drawing.Size(283, 63)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Checking.."
         '
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(45, 161)
+        Me.CheckBox1.Location = New System.Drawing.Point(60, 201)
+        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(117, 24)
+        Me.CheckBox1.Size = New System.Drawing.Size(153, 29)
         Me.CheckBox1.TabIndex = 2
         Me.CheckBox1.Text = "Start maple"
         Me.CheckBox1.UseVisualStyleBackColor = True
@@ -70,26 +73,28 @@ Partial Class Form1
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(220, 161)
+        Me.CheckBox2.Location = New System.Drawing.Point(293, 201)
+        Me.CheckBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(76, 24)
+        Me.CheckBox2.Size = New System.Drawing.Size(99, 29)
         Me.CheckBox2.TabIndex = 2
         Me.CheckBox2.Text = "Alarm"
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(419, 220)
+        Me.ClientSize = New System.Drawing.Size(559, 275)
         Me.Controls.Add(Me.CheckBox2)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.ForeColor = System.Drawing.Color.Red
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form1"
-        Me.Text = "stupid server checker"
+        Me.Text = "stupid server checker v3.1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -100,5 +105,4 @@ Partial Class Form1
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
-
 End Class
