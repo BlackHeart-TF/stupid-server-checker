@@ -60,7 +60,7 @@ Public Class Form1
 
         End If
         If current = True Then
-            Label2.Text = "Online v" + MajorV.ToString + "." + MinorV
+            Label2.Text = "Online v" + MajorV.ToString + "." + MinorV.ToString
         Else
             Label2.Text = "Offline"
         End If
