@@ -89,9 +89,8 @@ endl:
         Try
             Dim serverStream As NetworkStream
             Dim serverIP As IPAddress = IPAddress.Parse("8.31.99.141")
-            Dim port As Integer
             Dim clientSocket As TcpClient = New TcpClient()
-            clientSocket.Connect(serverIP, port)
+            clientSocket.Connect(serverIP, 8484)
             serverStream = clientSocket.GetStream()
             Dim inStream(100000) As Byte
             serverStream.Read(inStream, 0, clientSocket.ReceiveBufferSize)
