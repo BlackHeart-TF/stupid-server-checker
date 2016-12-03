@@ -30,7 +30,13 @@ Public Class Form1
         mapleInst.StartInfo.FileName = msdir & "\Maplestory.exe"
         mapleInst.StartInfo.Arguments = "GameLaunching"
         mapleInst.StartInfo.WorkingDirectory = msdir
-        CheckBox1.Checked = True
+        If msdir = "null" Then
+            CheckBox1.Checked = False
+            CheckBox1.Visible = False
+        Else
+            CheckBox1.Checked = True
+        End If
+
         CheckBox2.Checked = True
         Timer1.Start()
     End Sub
@@ -150,7 +156,7 @@ found:
             Return dir
         Else
 
-            MessageBox.Show("MapleStory.exe not found")
+            MessageBox.Show("MapleStory.exe not found." + vbNewLine + "Autostart disabled.")
             Return "null"
         End If
 
